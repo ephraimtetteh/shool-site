@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="website.css">
+  <title>university website</title>
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+      <a href="website.html"><img src="images/OMAS-1.png" ></a>
+      <div class="nav-links" id="nav-links">
+        <img src="images/icons8-close-50.png" class="icon" onclick="hideMenu()">
+        <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">COURSE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="images/icons8-menu-white.png" class="icon" onclick="showMenu()">
+    </nav>
+
+    <div class="text-box">
+      <h1>Ghana's Premuim University</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam nulla similique officiis vero praesentium, quos sequi at  fugiat dolorem, autem deserunt.</p>
+      <a href="" class="hero-btn">visit us to know more</a>
+    </div>
+  </section>
+
+  <!-- course -->
+  <section class="course">
+     <h1>Course We Offer</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, commodi!</p>
+
+     <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati praesentium quibusdam exercitationem. Quia reprehenderit maiores illo sint corrupti deserunt porro.</p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati praesentium quibusdam exercitationem. Quia reprehenderit maiores illo sint corrupti deserunt porro.</p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati praesentium quibusdam exercitationem. Quia reprehenderit maiores illo sint corrupti deserunt porro.</p>
+      </div>
+     </div>
+  </section>
+
+
+  <!-- campus -->
+
+  <section class="campus">
+    <h1>Our Global campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis .</p>
+
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/campus-1.jpg">
+        <div class="layer">
+         <h3>Accra</h3>
+        </div>
+      </div>
+
+      <div class="campus-col">
+        <img src="images/campus-2.jpg">
+        <div class="layer">
+         <h3>Kumasi</h3>
+        </div>
+      </div>
+
+      <div class="campus-col">
+        <img src="images/campus-bg-3.jpg">
+        <div class="layer">
+         <h3>Takoradi</h3>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- facilities -->
+
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, reiciendis.</p>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/cafeteria-2.jpg">
+        <h3>Mordern Cafeteria</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et temporibus magni.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/libary-2.jpg">
+        <h3>Standard Library</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et temporibus magni.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/sports-2.jpg">
+        <h3>Best Sport Equipments</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et temporibus magni.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- testimonials -->
+
+  <section class="testimonial">
+    <h1>What Our Students Say</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, reiciendis.</p>
+
+    <div class="row">
+      <div class="testimonial-col">
+        <img src="images/people-w-2.jpg">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor culpa quae reprehenderit sint iure similique deserunt, dicta perferendis libero.</p>
+          <h3>Christine Berlley</h3>
+        </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="images/people-w-2.jpg">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor culpa quae reprehenderit sint iure similique deserunt, dicta perferendis libero.</p>
+          <h3>hirris theey</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- call to action -->
+
+  <section class="cta">
+    <h1>Enroll for our various online courses <br> from Anywhere in the world</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium optio aspernatur excepturi molestias esse <br>voluptatibus dolores quam laboriosam expedita sint.</p>
+    <div class="icons">
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-instagram.svg">
+      <img src="images/icon-twitter.svg">
+    </div>
+    <p>copyright reseverd by UEW</p>
+  </section>
+
+
+
+
+
+
+<!-- javascript for toggle menu -->
+  <script>
+    const navLinks = document.getElementById('nav-links');
+
+    function showMenu(){
+      navLinks.style.right = "0"
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px"
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="website.css">
+  <title>university website</title>
+</head>
+
+<body>
+
+  <section class="sub-header">
+    <nav>
+      <a href="website.html"><img src="images/OMAS-1.png"></a>
+      <div class="nav-links" id="nav-links">
+        <img src="images/icons8-close-50.png" class="icon" onclick="hideMenu()">
+        <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">COURSE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="images/icons8-menu-white.png" class="icon" onclick="showMenu()">
+    </nav>
+
+    <div class="text-box">
+      <h1 class="blog-h1">Our Certificates & Online Programs</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam nulla similique officiis vero.</p>
+      <a href="" class="hero-btn">visit us to know more</a>
+    </div>
+  </section>
+
+  <!-- blog content -->
+  <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="images/graduation-2.jpg" >
+        <h2>Our Certificates & Online Programs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et praesentium libero voluptate sint tempore ducimus deserunt iure ad, officiis consectetur, rem earum blanditiis iste natus illo accusantium neque quas cupiditate.</p> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium labore corrupti repellat est debitis quia dicta minus tempora vero delectus id ducimus, itaque deleniti aspernatur vitae, reiciendis voluptates modi, explicabo optio non tempore. Iste voluptate quasi aliquam alias animi.</p> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi necessitatibus ut dolore quidem accusamus reprehenderit ipsum, odit illo mollitia aperiam error tenetur ipsam porro velit corporis magni culpa quia. Aut quam, dolores provident aperiam ex, quo beatae totam nihil quidem inventore numquam perferendis similique placeat, tempore libero id sint?</p> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deleniti, debitis nam obcaecati dolor repellendus omnis architecto a, incidunt quo officia optio. Amet, commodi ratione!</p>
+
+
+        <div class="comment-box">
+
+          <h3>Leave a Comment</h3>
+          <form class="comment-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email Address">
+            <textarea rows="5" placeholder="Your Comment"></textarea>
+            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="blog-right">
+       <h3>Post Categories</h3>
+       <div>
+        <span>Business Administration</span>
+        <span>25</span>
+       </div>
+       <div>
+        <span>Computer Science</span>
+        <span>14</span>
+       </div>
+       <div>
+        <span>public Administration</span>
+        <span>28</span>
+       </div>
+       <div>
+        <span>Economics</span>
+        <span>31</span>
+       </div>
+       <div>
+        <span>Medicine</span>
+        <span>34</span>
+       </div>
+       <div>
+        <span>Languages</span>
+        <span>21</span>
+       </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+
+
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium optio aspernatur excepturi molestias esse
+      <br>voluptatibus dolores quam laboriosam expedita sint.
+    </p>
+    <div class="icons">
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-instagram.svg">
+      <img src="images/icon-twitter.svg">
+    </div>
+    <p>copyright reseverd by UEW</p>
+  </section>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    const navLinks = document.getElementById('nav-links');
+
+    function showMenu() {
+      navLinks.style.right = "0"
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px"
+    }
+  </script>
+</body>
+
+</html>

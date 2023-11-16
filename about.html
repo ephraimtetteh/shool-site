@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="website.css">
+  <title>university website</title>
+</head>
+
+<body>
+
+  <section class="sub-header">
+    <nav>
+      <a href="website.html"><img src="images/OMAS-1.png"></a>
+      <div class="nav-links" id="nav-links">
+        <img src="images/icons8-close-50.png" class="icon" onclick="hideMenu()">
+        <ul>
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">COURSE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="images/icons8-menu-white.png" class="icon" onclick="showMenu()">
+    </nav>
+
+    <div class="text-box">
+      <h1>About Us</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam nulla similique officiis vero
+        praesentium, quos sequi at fugiat dolorem, autem deserunt.</p>
+      <a href="" class="hero-btn">visit us to know more</a>
+    </div>
+  </section>
+
+
+  <!-- about us content -->
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest university</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quam beatae laboriosam sint tempora obcaecati similique explicabo perspiciatis rem dolorem dolores expedita commodi, eveniet voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus.</p>
+        <a href="" class="hero-btn red-btn">Explore Now</a>
+      </div>
+
+      <div class="about-col">
+        <img src="images/people-w-4.jpg">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium optio aspernatur excepturi molestias esse
+      <br>voluptatibus dolores quam laboriosam expedita sint.</p>
+    <div class="icons">
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-instagram.svg">
+      <img src="images/icon-twitter.svg">
+    </div>
+    <p>copyright reseverd by UEW</p>
+  </section>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    const navLinks = document.getElementById('nav-links');
+
+    function showMenu() {
+      navLinks.style.right = "0"
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px"
+    }
+  </script>
+  </body>
+  
+  </html>

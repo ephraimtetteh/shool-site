@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="website.css">
+  <title>university website</title>
+</head>
+
+<body>
+
+  <section class="sub-header">
+    <nav>
+      <a href="website.html"><img src="images/OMAS-1.png"></a>
+      <div class="nav-links" id="nav-links">
+        <img src="images/icons8-close-50.png" class="icon" onclick="hideMenu()">
+        <ul>
+          <li><a href="website.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="images/icons8-menu-white.png" class="icon" onclick="showMenu()">
+    </nav>
+
+    <div class="text-box">
+      <h1>Contact Us</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Numquam nulla similique officiis vero
+       </p>
+      <a href="" class="hero-btn">visit us to know more</a>
+    </div>
+  </section>
+
+
+  <!-- contact us  -->
+ <section class="location">
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15882.557011049688!2d-0.15852971507983485!3d5.620163364468732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1695305871890!5m2!1sen!2sgh"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ </section>
+
+ <section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <img src="images/home_pin_location.svg" alt="">
+        <span>
+          <h5>XYZ Road, ASC Building</h5>
+          <p>Spintex Accra, GH</p>
+        </span>
+      </div>
+      <div>
+        <img src="images/contacts_icon.svg" alt="">
+        <span>
+          <h5>+233-474-437-3763</h5>
+          <p>Monday to Friday, 9AM to 7PM</p>
+        </span>
+      </div>
+      <div>
+        <img src="images/mail_icon.svg" alt="">
+        <span>
+          <h5>info@ug.com</h5>
+          <p>Email us your query</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="contact-col">
+      
+      <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="Subject" placeholder="Subject" required>
+        <textarea  rows="8" name="Message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+      </form>
+
+    </div>
+  </div>
+
+ </section>
+
+
+
+  <!-- footer -->
+  
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium optio aspernatur excepturi molestias esse
+      <br>voluptatibus dolores quam laboriosam expedita sint.</p>
+    <div class="icons">
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-instagram.svg">
+      <img src="images/icon-twitter.svg">
+    </div>
+    <p>copyright reseverd by UEW</p>
+  </section>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    const navLinks = document.getElementById('nav-links');
+
+    function showMenu() {
+      navLinks.style.right = "0"
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px"
+    }
+  </script>
+  </body>
+  
+  </html>
